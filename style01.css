@@ -303,105 +303,6 @@ h1 {
 }
 
 
-
-
-
-
-
-
-
-/* === ⚡ SECCIÓN RESPONSIVA === */
-
-/* Tablets (pantallas medianas) */
-@media (max-width: 992px) {
-  .contenedor {
-    padding: 60px 40px;
-    max-width: 700px;
-  }
-
-  h1 {
-    font-size: 2.4rem;
-  }
-
-  .subtitulo {
-    font-size: 1.8rem;
-  }
-
-  .texto {
-    font-size: 1.2rem;
-  }
-
-  #boton {
-    padding: 14px 35px;
-    font-size: 18px;
-  }
-}
-
-/* Celulares (pantallas pequeñas) */
-@media (max-width: 600px) {
-  body {
-    overflow-y: auto;
-    overflow-x: hidden;
-  }
-
-  .contenedor {
-    width: 90%;
-    padding: 40px 25px;
-    border-radius: 25px;
-  }
-
-  h1 {
-    font-size: 2rem;
-  }
-
-  .subtitulo {
-    font-size: 1.5rem;
-  }
-
-  .texto {
-    font-size: 1rem;
-  }
-
-  #boton {
-    padding: 12px 28px;
-    font-size: 16px;
-  }
-
-  .imagen {
-    width: 150px;
-  }
-
-  .mensaje {
-    font-size: 1rem;
-    margin-top: 150px;
-  }
-
-  #frase-animada {
-    font-size: 1rem;
-    height: auto;
-  }
-}
-
-/* Pantallas muy grandes (TV o monitores anchos) */
-@media (min-width: 1400px) {
-  .contenedor {
-    max-width: 1000px;
-    padding: 90px 80px;
-  }
-
-  h1 {
-    font-size: 3.2rem;
-  }
-
-  .subtitulo {
-    font-size: 2.3rem;
-  }
-
-  .texto {
-    font-size: 1.4rem;
-  }
-}
-
 :root {
     --deco-w: 120px;
     --deco-h: 120px;
@@ -583,3 +484,99 @@ h1 {
 }
 
 
+/* === ⚡ SECCIÓN RESPONSIVA === */
+
+/* Pantallas grandes (más de 1400px) */
+@media (min-width: 1400px) {
+  .contenedor {
+    max-width: 1000px;  /* Ancho máximo para pantallas grandes */
+    padding: 90px 80px;
+  }
+
+  h1 {
+    font-size: 3.2rem;
+  }
+
+  .subtitulo {
+    font-size: 2.3rem;
+  }
+
+  .texto {
+    font-size: 1.4rem;
+  }
+
+  #boton {
+    padding: 18px 45px;
+    font-size: 20px;
+  }
+}
+
+/* Tablets (pantallas medianas) */
+@media (max-width: 992px) {
+  .contenedor {
+    padding: 60px 40px;
+    max-width: 700px;  /* Ancho máximo en tablets */
+  }
+
+  h1 {
+    font-size: 2.4rem;
+  }
+
+  .subtitulo {
+    font-size: 1.8rem;
+  }
+
+  .texto {
+    font-size: 1.2rem;
+  }
+
+  #boton {
+    padding: 14px 35px;
+    font-size: 18px;
+  }
+}
+
+/* Celulares (pantallas pequeñas) */
+@media (max-width: 600px) {
+  body {
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  .contenedor {
+    width: 90%;  /* Asegura que el contenedor ocupe el 90% en pantallas pequeñas */
+    padding: 40px 25px;
+    border-radius: 25px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .subtitulo {
+    font-size: 1.5rem;
+  }
+
+  .texto {
+    font-size: 1rem;
+  }
+
+  #boton {
+    padding: 12px 28px;
+    font-size: 16px;
+  }
+
+  .imagen {
+    width: 150px;  /* Ajuste del tamaño de la imagen en móviles */
+  }
+
+  .mensaje {
+    font-size: 1rem;
+    margin-top: 150px;  /* Ajuste de margen en pantallas pequeñas */
+  }
+
+  #frase-animada {
+    font-size: 1rem;
+    height: auto;
+  }
+}
